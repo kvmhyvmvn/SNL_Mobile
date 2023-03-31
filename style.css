@@ -32,13 +32,15 @@ body {
   display: flex; /*표시*/
   justify-content: center; /*컨텐츠 정렬: 가운데 */
 }
-.menu ul li, .sub_menu ul li {
+.menu ul li,
+.sub_menu ul li {
   padding: 20px 0;
   margin: 0 10px;
 }
 .menu ul li a {
   color: white;
-  text-decoration: none; /*텍스트 꾸밈 속성: 없음*/
+  text-decoration: none;
+  font-size: 13px; /*텍스트 꾸밈 속성: 없음*/
 }
 .sub_menu {
   background-color: #fafafa;
@@ -57,13 +59,15 @@ body {
 .sub_menu ul li a {
   color: #666666;
   text-decoration: none;
+  font-size: 13px;
 }
 .price,
 .casting {
-  width: 700px;
+  width: 800px;
   margin: 0 auto;
 }
-.price th, .casting th {
+.price th,
+.casting th {
   width: 200px;
 }
 .price,
@@ -86,7 +90,7 @@ body {
 .price td,
 .casting th,
 .casting td {
-  padding: 15px 0;
+  padding: 20px 0;
   text-align: center;
 }
 .site-info {
@@ -95,4 +99,33 @@ body {
 }
 .site-info p {
   color: white;
+}
+@media screen and (max-width: 360px) {
+  #model {
+    width: 320px;
+    left: 50%; /* 왼쪽 위치 : 화면의 중앙 */
+    margin-left: -160px; /*왼쪽 여백 : 사진의 1/2 더 왼쪽으로 */
+  }
+  #model img {
+    width: 100%;
+  }
+  .menu a, .sub_menu a {
+    font-size: 14px;
+    letter-spacing: -2px; /*자간*/
+  }
+  .price,
+  .casting {
+    width: 83.33333333333333%;
+  }
+  .price th,
+  .casting th {
+    width: 25%;
+  }
+  .price th,
+  .price td,
+  .casting th,
+  .casting td {
+    font-size: 14px;
+    letter-spacing: -1px;
+  }
 }
