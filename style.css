@@ -99,6 +99,67 @@ body {
 }
 .site-info p {
   color: white;
+  margin: 20px 0;
+}
+.form_title {
+  max-width: 1190px;
+  margin: 50px auto;
+  padding: 20px 0;
+  background-color: #006fff;
+  color: white;
+  text-align: center;
+}
+form,
+fieldset {
+  border: 0;
+}
+form {
+  /* mvp css에서 form의 가로 길이를 제한함으로 이를 해결하기 위한 스타일 */
+  width: 100%;
+  max-width: 100%;
+}
+legend {
+  display: none;
+}
+.form_wrap {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+.d-flex {
+  display: flex;
+}
+.justify-center {
+  justify-content: center;
+}
+.justify-between {
+  justify-content: space-between;
+}
+.align-center {
+  align-items: center;
+}
+.d-flex label {
+  text-align: right;
+  margin-right: 1rem;
+  flex: 2;
+}
+.d-flex input {
+  flex: 8;
+}
+.d-flex > div {
+  /* 자손 선택자 */
+  margin-left: 75px;
+}
+[type="submit"] {
+  /* 속성 선택자 */
+  padding: 5px 20px;
+}
+.divider {
+  margin: 1rem 0;
+}
+a,
+a:link {
+  color: #006fff;
 }
 @media screen and (max-width: 360px) {
   #model {
@@ -109,7 +170,8 @@ body {
   #model img {
     width: 100%;
   }
-  .menu a, .sub_menu a {
+  .menu a,
+  .sub_menu a {
     font-size: 14px;
     letter-spacing: -2px; /*자간*/
   }
