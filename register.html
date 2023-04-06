@@ -9,10 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css">
+    <link rel="stylesheet" href="https://unpkg.com/mvp.css@1.12/mvp.css" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -29,6 +29,7 @@
         <li><a href="#">고객센터</a></li>
       </ul>
     </div>
+    <h2 class="form_title">MEMBERSHIP | 회원가입</h2>
     <form>
       <fieldset>
         <legend>회원가입</legend>
@@ -71,20 +72,25 @@
             <input type="email" id="reg_mail" name="reg_mail" />
           </div>
           <div class="d-flex">
-            <label for="reg_agree">광고성 문자 수신동의</label>
-            <div class="d-flex align-center flex-8">
+            <label for="reg_agree">광고성 문자 <br />수신동의</label>
+            <div class="d-flex align-center flex-8 ml-0">
               <input type="checkbox" id="reg_agree" name="reg_agree" />
               <p>동의</p>
             </div>
           </div>
-          <div class="d-flex">
+          <div class="d-flex align-center">
             <label for="reg_member">추천인 코드</label>
-            <input type="text" id="reg_member" name="reg_member" placeholder="신규 멤버와 추천받은 멤머 모두 포인트 증정"/>
+            <input
+              type="text"
+              id="reg_member"
+              name="reg_member"
+              placeholder="신규 멤버와 추천받은 멤버 모두 포인트 증정"
+            />
           </div>
           <div class="d-flex justify-center">
             <button type="submit">가입</button>
             <button type="reset">취소</button>
-        </div>
+          </div>
         </div>
       </fieldset>
     </form>
