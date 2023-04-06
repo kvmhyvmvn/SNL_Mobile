@@ -146,24 +146,28 @@ legend {
 }
 .d-flex input {
   flex: 8;
-  padding: 1rem 0
+  padding: 1rem 0;
 }
 .flex-8 {
-  flex: 8
+  flex: 8;
 }
 .d-flex > div {
   /* 자손 선택자 */
   margin-left: 75px;
 }
-[type=submit], [type=reset] {
+.d-flex > .ml-0 {
+  margin-left: 0;
+}
+[type="submit"],
+[type="reset"] {
   /* 속성 선택자 */
   padding: 5px 20px;
 }
-[type=reset] {
+[type="reset"] {
   margin-left: 1rem;
-  border:2px solid #006FFF;
-  color: #006FFF;
-  background-color: transparent /* 투명 */
+  border: 2px solid #006fff;
+  color: #006fff;
+  background-color: transparent; /* 투명 */
 }
 .divider {
   margin: 1rem 0;
@@ -172,6 +176,17 @@ a,
 a:link {
   color: #006fff;
 }
+[type="text"],
+[tpe="password"],
+[type="tel"],
+[type="email"] {
+  text-indent: 1rem;
+}
+#rg_agree {
+  margin-bottom: 0;
+  margin-right: 1rem;
+}
+
 @media screen and (max-width: 360px) {
   #model {
     width: 320px;
