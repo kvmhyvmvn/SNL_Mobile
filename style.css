@@ -14,8 +14,8 @@ body {
 .wide {
   height: 309px;
   position: relative;
-  background-color: #006fff;
   text-align: center;
+  background-color: #006fff;
   background-image: url("images/visual-wide.png");
   background-repeat: no-repeat;
   background-position: center center;
@@ -37,15 +37,14 @@ body {
   padding: 20px 0;
   margin: 0 10px;
 }
-.menu ul li a {
+.menu a {
   color: white;
   text-decoration: none;
-  font-size: 13px; /*텍스트 꾸밈 속성: 없음*/
 }
 .sub_menu {
   background-color: #fafafa;
   border: 1px solid gray;
-  margin-top: 50px;
+  margin-top: 50px 0 0 0;
 }
 .sub_menu ul {
   list-style-type: none;
@@ -54,9 +53,8 @@ body {
 }
 .sub_menu ul li {
   padding: 20px 0;
-  margin: 0 10px;
 }
-.sub_menu ul li a {
+.sub_menu a {
   color: #666666;
   text-decoration: none;
   font-size: 13px;
@@ -83,8 +81,7 @@ body {
 .casting caption {
   font-size: 18px;
   font-weight: bolder;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin: 30px 0 20px 0;
 }
 .price th,
 .price td,
@@ -96,6 +93,7 @@ body {
 .site-info {
   background-color: black;
   text-align: center;
+  padding: 30px 0;
 }
 .site-info p {
   color: white;
@@ -125,6 +123,9 @@ legend {
   max-width: 400px;
   margin: 0 auto;
 }
+.w-800 {
+  max-width: 800px;
+}
 
 .d-flex {
   display: flex;
@@ -145,14 +146,24 @@ legend {
 }
 .d-flex input {
   flex: 8;
+  padding: 1rem 0
+}
+.flex-8 {
+  flex: 8
 }
 .d-flex > div {
   /* 자손 선택자 */
   margin-left: 75px;
 }
-[type="submit"] {
+[type=submit], [type=reset] {
   /* 속성 선택자 */
   padding: 5px 20px;
+}
+[type=reset] {
+  margin-left: 1rem;
+  border:2px solid #006FFF;
+  color: #006FFF;
+  background-color: transparent /* 투명 */
 }
 .divider {
   margin: 1rem 0;
