@@ -159,7 +159,6 @@ legend {
 }
 [type="submit"],
 [type="reset"] {
-  /* 속성 선택자 */
   padding: 5px 20px;
 }
 [type="reset"] {
